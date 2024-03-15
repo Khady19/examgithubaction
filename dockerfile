@@ -6,6 +6,6 @@ EXPOSE 8080
 
 RUN mkdir -p /app/data
 
-ADD docker/dockervolume.jar dockerfile.jar
+ADD target/examgithubaction.jar examgithubaction.jar
 
-ENTRYPOINT ["java", "-jar", "dockervolume.jar"]
+ENTRYPOINT ["java", "-jar", "examgithubaction.jar"]
